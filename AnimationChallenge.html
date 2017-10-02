@@ -1,0 +1,77 @@
+<!doctype html>  
+<html>  
+<head>  
+	<meta charset="UTF-8">
+	<title>HTML CSS Exercise - Animation Challenge</title>  
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+		
+	</head>  
+	<body> 
+	
+	<header>
+		
+		<div class="explain leerdoel">
+			<h1>Animation Challenge</h1>
+			<p>leerdoel:</p>
+			<p>Je leert in deze oefening hoe je een eenvoudige animatie maakt.</p>
+			<p>Sub doelen: HTML positionering en translate tranformaties</p> 				
+		</div>
+
+		<div class="explain opdracht">
+			<p>Opdracht:</p>
+			<p>Zorg dat de twee vierkantjes naar het midden toe elkaar bewegen</p>
+			
+		</div> 
+	</header>
+	
+	<hr>
+	
+	<main>
+		<article class="container">
+			<div class="A">A</div>
+			<div class="B">B</div>
+		</article>
+	</main>
+	
+	<hr>
+	
+	<footer>
+		
+		
+		
+		<button class="HelperButton" onclick="helpMe()">Hulp nodig?</button>
+		<h3 class="hidden">Handige link</h3>
+		<ul class="hidden">
+			<li>
+				<a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">
+					Lees dit!
+				</a>
+					
+			</li>
+				
+		</ul>
+	</footer>
+		
+	<script>
+	/*
+	Officieel dient javascript in de head tags of beter nog in zijn eigen .js bestand te staan.
+	*/
+		function helpMe() {
+			//document.getElementById("hiddenList").style.display = 'block';
+			var x = document.getElementsByClassName("hidden");
+			var i;
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = 'block';
+			}
+			var y = document.getElementsByClassName("HelperButton");
+			var j;
+			for (j = 0; j < y.length; j++) {
+				y[j].style.display = 'none';
+			}
+		}
+	</script>
+
+		
+	</body>  
+	</html>  
