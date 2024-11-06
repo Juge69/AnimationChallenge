@@ -52,6 +52,9 @@ body {
     /* dit zorgt ervoor dat het rode vierkant niet helemaal rechts buiten beeld valt bij een left van 100% */
     transform: translate(-100%, 0);
     z-index:1;
+    animation-name: Animation1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 
 
 }
@@ -65,7 +68,19 @@ body {
     top:-100px;
     left:0%;
     z-index:0;
+    animation-name: Animation2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 
+}
+
+@keyframes Animation1{
+    50% {left: 55%;}
+    100%{left: 100%;}
+}
+@keyframes Animation2{
+    50% {left: 42%;}
+    100%{right: 100%}
 }
 
 
